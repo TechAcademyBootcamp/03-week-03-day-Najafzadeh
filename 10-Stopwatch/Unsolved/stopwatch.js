@@ -36,35 +36,38 @@ var stopwatch = {
       //  TODO: Use setInterval to start the count here and set the clock to running.
       if (clockRunning === false) {
         //do the work
-        
-
-      }
+      intervalId = setInterval(stopwatch.count, 1000);        
+        clockRunning = true;
+        }
 
   },
   stop: function() {
 
     //  TODO: Use clearInterval to stop the count here and set the clock to not be running.
-
+  clearInterval(intervalId);
+  clockRunning = false;
   },
 
   recordLap: function() {
 
       //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
       //        and save the result in a variable.
-
+    var converted = stopwatch.timeConverter(stopwatch.time);
       //  TODO: Add the current lap and time to the "laps" div.
-
+    $("laps").append("<p> Lap" + stopwatch.lap + ":" + converted + "</p>")
       //  TODO: Increment lap by 1. Remember, we can't use "this" here.
+      stopwatch.lap++;
   },
   count: function() {
 
     //  TODO: increment time by 1, remember we cant use "this" here.
-
+    stopwatch.time++;
     //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
     //        and save the result in a variable.
-
+    var converted = stopwatch.timeConverter(stopwatch.time);
     //  TODO: Use the variable you just created to show the converted time in the "display" div.
-
+    console.log(converted);
+    $("#display").text(converted);
   },
 
   //  THIS FUNCTION IS DONE FOR US!

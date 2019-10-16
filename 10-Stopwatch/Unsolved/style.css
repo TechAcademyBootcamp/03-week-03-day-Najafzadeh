@@ -1,19 +1,19 @@
 /* Students: Our work lies in the js file. */
 
 body { /* Visual */
-  background: black;
+  background:gray;
 }
 
 #display {
   font-family: monospace;
-  font-size: 120px;
-  color: green;
+  font-size: 100px;
+  color: yellow;
 
   /* Typography */
   text-align: center;
 
   /* Visual */
-  background: black;
+  background:gray;
 }
 
 #wrapper {
@@ -26,11 +26,12 @@ body { /* Visual */
 
 #buttons { /* Typography */
   text-align: center;
+  
 }
 
 button {
   width: 100px;
-
+color: rgb(62, 63, 54);
   /* Box-model */
   height: 50px;
 }
