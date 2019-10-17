@@ -2,7 +2,10 @@
 // Students: follow the instructions below:
 
 // TODO: Put links to our images in this image array.
-var images = [];
+var images = ["/home/gunzadeh/03-week-03-day-Najafzadeh/11-Slideshow/Unsolved/images/bootstrap.png",
+"/home/gunzadeh/03-week-03-day-Najafzadeh/11-Slideshow/Unsolved/images/github-logo.jpg", 
+"/home/gunzadeh/03-week-03-day-Najafzadeh/11-Slideshow/Unsolved/images/loading.gif", 
+"/home/gunzadeh/03-week-03-day-Najafzadeh/11-Slideshow/Unsolved/images/logo_JavaScript.png"];
 
 // Variable showImage will hold the setInterval when we start the slideshow
 var showImage;
